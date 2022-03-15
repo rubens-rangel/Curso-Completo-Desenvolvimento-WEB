@@ -1,0 +1,67 @@
+<div class = "content">
+    <h2>Implementação de Pipes</h2>
+
+    <table class = "bordaTabela">
+        <thead>
+            <tr>
+                <th>Raiz Um</th>
+                <th>Raiz Dois</th>
+                <th>Raiz Tres</th>
+            </tr>
+        </thead>
+        <tbody>  
+            <tr>
+                <td>
+                    <b>Raiz quadrada de {{ raizUm }} é:</b>
+                    <br />
+                    {{ raizUm | pipeRaizQuadrada }}
+                </td>
+                <td>
+                    <b>Raiz quadrada de {{ raizDois }} é:</b>
+                    <br />
+                    {{ raizDois | pipeRaizQuadrada }}
+                </td>
+                <td>
+                    <b>Raiz quadrada de {{ raizTres }} é:</b>
+                    <br />
+                    {{ raizTres | pipeRaizQuadrada  }}
+                </td>                
+            </tr>          
+        </tbody>
+    </table>
+</div>
+
+<!--
+
+ <table class = "bordaTabela">
+        <thead>
+            <tr>
+                <th>Uppercase Pipe</th>
+                <th>Lowercase Pipe</th>
+                <th>Currency Pipe - Pipe para conversão de moedas</th>
+                <th>Date Pipe - Pipe para conversão de datas</th>
+                <th>Decimal Pipe - Formatação a partir de casas numericas</th>
+                <th>Percent Pipe - Formatação de porcetagem</th>
+            </tr>
+        </thead>
+        <tbody>  
+            <tr>
+                <td>{{ novoTitulo | uppercase }}</td>
+                <td>{{ novoTitulo | lowercase }}</td>
+                <td>
+                    {{ numFloat | currency: "USD" }}
+                    <br />
+                    {{ numFloat | currency: "BRL"}}
+                </td>
+                <td>
+                    {{ dataHoje | date: "d/M/y"}}
+                    <br />
+                    {{ dataHoje | date: "shortTime" }}
+                </td>
+                <td>{{ numDecimal | number: "3.2-4"}}</td>
+                <td>{{ numPercent | percent }}</td>
+            </tr>          
+        </tbody>
+    </table>
+
+-->

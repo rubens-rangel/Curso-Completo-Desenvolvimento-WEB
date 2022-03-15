@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Concessionaria_1 = require("./Concessionaria");
+var Carro_1 = require("./Carro");
+var Moto_1 = require("./Moto");
+var carro = new Carro_1.Carro('veloster', 3);
+var moto = new Moto_1.Moto();
+moto.acelerar();
+moto.acelerar();
+carro.acelerar();
+carro.acelerar();
+var concessionaria = new Concessionaria_1.Concessionaria('', []);
+console.log(moto);
+console.log(carro);
+console.log(concessionaria.fornecerHorariosDeFuncionamento());

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Desenvolvimento Web</title>
+    <script>
+
+        //3 escopos : global, funcao e bloco
+
+        var serie = 'Friends'  //variavel declarada no escopo global
+
+        if(true) {
+            //escopo de bloco
+            var serie2 = 'Game of Thrones'
+            document.write(serie)
+        }
+
+        document.write(serie2)
+
+        document.write('<br />')
+
+        function x() {
+            //escopo da funcao
+            var serie3 = 'The walking Dead'
+            document.write(serie)
+            document.write(serie2)
+        }
+
+        x()
+        document.write('<br />')
+        document.write(serie3)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

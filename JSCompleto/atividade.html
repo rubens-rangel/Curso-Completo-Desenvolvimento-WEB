@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Desenvolvimento Web</title>
+    <script>
+      var numero1 = prompt('digite um numero')
+      var operacao = prompt('digite a operacao')
+      var numero2 = prompt('digite outro numero')
+      
+
+      function operacoes(numero1,numero2,operacao){
+
+      switch(operacao){
+      case "soma":
+        document.write(numero1+numero2)
+        break
+
+      case "subtracao":
+        document.write(numero1 - numero2)
+        break
+
+      default:
+        document.write('formato invalido')
+      }
+
+    }
+
+    operacoes()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
